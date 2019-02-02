@@ -8,7 +8,7 @@
   <header class="main-header">
       <nav class="main-navigation">
           <a class="main-header-logo">
-          <img src="img/index-logo-Sedona.svg" width="368" height="153" alt="Логотип City of Sedona">
+          <img src="img/index-logo-Sedona.svg" width="184" height="76" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
@@ -27,14 +27,24 @@
       </section>
        <section class="result">
         <h2 class="visually-hidden">Результат поиска</h2>
-           
-        <section class="visually-hidden">
+          
+        <section class="sorting">
             <h3>Сортировка:</h3>
-          <ul class="sortby">
-            <li class="sortby-current">По цене</li>
-            <li><a href="#">По типу</a></li>
-            <li class="#">По рейтингу</li>
+            <fieldset>
+            <legend class="visually-hidden">Группа сортировки:</legend>
+          <ul>
+            <li class="sortby-current"> <a href="#" type="button">По цене</a></li>
+            <li><a href="#" type="button">По типу</a></li>
+            <li><a href="#" type="button">По рейтингу</a></li>
+           </ul>
+            </fieldset>
+            <fieldset>
+            <legend class="visually-hidden">Метод сортировки</legend>
+            <ul>
+            <li><a href="#" type="button">По убыванию</a></li>
+             <li class="sortby-current"><a href="#" type="button">По возростанию</a></li>
           </ul>
+            </fieldset>
       </section>
            
            <h3>Найдено:3</h3>
@@ -51,8 +61,8 @@
             </p>
             <p>Гостиница</p>
             <p>От 4000р</p>
-            <a class="button" href="details_Amara.html">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button detail" href="details_Amara.html">Подробнее</a>
+            <a class="button reserve" href="#">Забронировать</a>
              <p class="hotels-rating">
                <b>Рейтинг: 8,5</b>
              </p>
@@ -70,8 +80,8 @@
             </p>
             <p>Мотель</p>
             <p>От 3000р</p>
-            <a class="button" href="details_Desert.html">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button detail" href="details_Desert.html">Подробнее</a>
+            <a class="button reserve" href="#">Забронировать</a>
                <p class="hotels-rating">
                <b>Рейтинг: 8,9</b>
              </p>  
@@ -89,8 +99,8 @@
             </p>
             <p>Апартаменты</p>
             <p>От 2000р</p>
-            <a class="button" href="details_Villas.html">Подробнее</a>
-            <a class="button" href="#">Забронировать</a>
+            <a class="button detail" href="details_Villas.html">Подробнее</a>
+            <a class="button reserve" href="#">Забронировать</a>
              <p class="hotels-rating">
                <b>Рейтинг: 9,2</b>
              </p>
@@ -111,9 +121,10 @@
         </ul>
       </div> 
     <div class="footer-copyright">
-        <b>Website by</b>
         <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-        <img src="img/index-logo.svg" width="368" height="153" alt="HTML Academy"></a>
+            <b>Website by</b>
+        <img src="img/index-logo.svg" width="67" height="67" alt="HTML Academy">
+        </a>
     </div>
     </footer>
     </body>

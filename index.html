@@ -8,7 +8,7 @@
   <header class="main-header">
       <nav class="main-navigation">
           <a class="main-header-logo">
-          <img src="img/index-logo-Sedona.svg" width="368" height="153" alt="Логотип City of Sedona">
+          <img src="img/index-logo-Sedona.svg" width="184" height="76" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
             <li><a href="info.html">Информация</a></li>
@@ -59,17 +59,17 @@
         <h2 class="visually-hidden">Рекомендации</h2>
           <ul class="recommendation-list">  
           <li class="recommendation-item">
-              <img src="img/house.svg" width="286" height="164" alt="Иконка домик">
+              <img src="img/house.svg" width="28" height="16" alt="Иконка домик">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>  
           </li>
           <li class="recommendation-item">
-              <img src="img/burger.svg" width="286" height="164" alt="Иконка бургер">
+              <img src="img/burger.svg" width="28" height="16" alt="Иконка бургер">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="recommendation-item">
-              <img src="img/present.svg" width="286" height="164" alt="Иконка подарок">
+              <img src="img/present.svg" width="28" height="16" alt="Иконка подарок">
           <h3>Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
           </li>
@@ -80,8 +80,45 @@
         <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <!-- Здесь будет форма -->
-        <span class="booking-close">x</span>
-       <a href="#"><img src="img/map.jpg" width="286" height="164" alt="Карта"></a> 
+        
+        <h3>Поиск гостиницы в Седоне</h3>
+        <form class="appointment-form" method="get" action="https://echo.htmlacademy.ru">
+          <p class="appointment-item">
+            <label for="appointment-arrival-date">Дата заезда:</label>
+            <input id="appointment-arrival-date" type="date" name="arrival-date" value="" placeholder="24 апреля 2017">
+          </p>
+            <p class="appointment-item">
+            <label for="appointment-departure-date">Дата выезда:</label>
+            <input id="appointment-departure-date" type="date" name="departure-date" value="" placeholder="4 июля 2017">
+          </p>
+        <p class="appointment-item">
+            <label for="appointment-adult">Взрослые:</label>
+            <button id="appointment-adult" class="button appointment-item minus" type="button">-</button>
+            <input id="appointment-adult" type="number" name="adult" value="" min="0" placeholder="2">
+            <button id="appointment-adult" class="button appointment-item add" type="button">+</button>
+          </p>
+        <p class="appointment-item">
+            <label for="appointment-child">Дети:</label>
+            <button id="appointment-child" class="button appointment-item minus" type="button">-</button>
+            <input id="appointment-child" type="number" name="child" value="" min="0" placeholder="0">
+            <button id="appointment-child" class="button appointment-item add" type="button">+</button>
+          </p>
+            <a class="button" href="hotels_Sedona.html">Найти</a>
+        </form> 
+         <button class="modal-close" type="button">
+          Закрыть
+        </button>
+         </section>
+        
+        
+        
+        
+     <section class="map">
+         <h2 class="visually-hidden">
+          Карта Штата
+        </h2>
+        <p>
+       <a href="#"><img src="img/map.jpg" width="286" height="164" alt="Карта Штата"></a> 
     </section>
        </main>  
       
@@ -98,9 +135,10 @@
         </ul>
       </div> 
     <div class="footer-copyright">
-        <b>Website by</b>
         <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-        <img src="img/index-logo.svg" width="368" height="153" alt="HTML Academy"></a>
+            <b>Website by</b>
+        <img src="img/index-logo.svg" width="67" height="67" alt="HTML Academy">
+        </a>
     </div>
     </footer>
       
