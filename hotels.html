@@ -7,7 +7,7 @@
   <body>
   <header class="main-header">
       <nav class="main-navigation">
-          <a class="main-header-logo">
+          <a class="main-header-logo" href="index.html">
           <img src="img/index-logo-Sedona.svg" width="184" height="76" alt="Логотип City of Sedona">
         </a>
         <ul class="site-navigation">
@@ -33,16 +33,20 @@
             <fieldset>
             <legend class="visually-hidden">Группа сортировки:</legend>
           <ul>
-            <li class="sortby-current"> <a href="#" type="button">По цене</a></li>
-            <li><a href="#" type="button">По типу</a></li>
-            <li><a href="#" type="button">По рейтингу</a></li>
+            <li class="sortby-current"> <a class="button" href="#">По цене</a></li>
+            <li><a class="button" href="#">По типу</a></li>
+            <li><a class="button" href="#">По рейтингу</a></li>
            </ul>
             </fieldset>
             <fieldset>
             <legend class="visually-hidden">Метод сортировки</legend>
             <ul>
-            <li><a href="#" type="button">По убыванию</a></li>
-             <li class="sortby-current"><a href="#" type="button">По возростанию</a></li>
+            <li>
+               <input type="image" src="img/icon-up-dir.svg" width="18" height="7" alt="Сортировка по убыванию"> 
+            </li>
+                <li class="sortby-current">
+               <input type="image" src="img/icon-down-dir.svg" width="18" height="7" alt="Сортировка по возростанию">     
+             </li>
           </ul>
             </fieldset>
       </section>
@@ -60,12 +64,17 @@
               </a>
             </p>
             <p>Гостиница</p>
-            <p>От 4000р</p>
-            <a class="button detail" href="details_Amara.html">Подробнее</a>
-            <a class="button reserve" href="#">Забронировать</a>
-             <p class="hotels-rating">
-               <b>Рейтинг: 8,5</b>
+            <p>От 4000р</p>  
+             <p class="visually-hidden">Категория отеля
+                 <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                 <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                 <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                 <img src="img/star.svg" width="18" height="7" alt="Звезда"></p>
+              <p class="hotels-rating">
+              <b>Рейтинг: 8,5</b>
              </p>
+              <a class="button detail" href="details_Amara.html">Подробнее</a>
+            <a class="button reserve" href="#">Забронировать</a>
           </li>
                   
              <li class="hotels-item">
@@ -80,11 +89,15 @@
             </p>
             <p>Мотель</p>
             <p>От 3000р</p>
+            <p class="visually-hidden">Категория отеля   
+                   <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                   <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                   <img src="img/star.svg" width="18" height="7" alt="Звезда"></p>
+               <p class="hotels-rating">     
+               <b>Рейтинг: 8,9</b>
+             </p> 
             <a class="button detail" href="details_Desert.html">Подробнее</a>
             <a class="button reserve" href="#">Забронировать</a>
-               <p class="hotels-rating">
-               <b>Рейтинг: 8,9</b>
-             </p>  
           </li>
                   
              <li class="hotels-item">
@@ -99,10 +112,13 @@
             </p>
             <p>Апартаменты</p>
             <p>От 2000р</p>
-            <a class="button detail" href="details_Villas.html">Подробнее</a>
-            <a class="button reserve" href="#">Забронировать</a>
+            <p class="visually-hidden">Категория отеля   
+                   <img src="img/star.svg" width="18" height="7" alt="Звезда">
+                   <img src="img/star.svg" width="18" height="7" alt="Звезда"></p>
              <p class="hotels-rating">
                <b>Рейтинг: 9,2</b>
+            <a class="button detail" href="details_Villas.html">Подробнее</a>
+            <a class="button reserve" href="#">Забронировать</a>
              </p>
           </li>           
         </ul>
@@ -115,7 +131,7 @@
         <div class="footer-social">
         <b class="visually-hidden">Социальные сети</b>
         <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
           <li><a class="social-button" href="#">YouTube</a></li>
         </ul>
