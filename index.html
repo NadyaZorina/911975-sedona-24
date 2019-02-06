@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+      <link href="css/normalize.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
   <header class="main-header">
@@ -25,37 +28,36 @@
         <section class="reasons">
         <h2 class="reasons-title">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</h2>
               <ul class="reasons-list">
-          <li class="reasons-item-blue">
+          <li class="reasons-item reasons-item-blue">
             <h3>Настоящий городок</h3>
             <p>-№1-</p>
             <p>Седона-не аттракцион для туристов, там течет своя жизнь.</p>
             
           </li>
-           <li class="reasons-item-blue">  
+           <li class="reasons-item reasons-item-blue">  
             <h3>Там есть мост Дьявола</h3>
             <p>-№2-</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            
+            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>  
           </li>
-          <li class="reasons-item-gray">
-            <h3>Небольая площадь</h3>
+          <li class="reasons-item reasons-item-gray">
+            <h3>Небольшая площадь</h3>
             <p>-№3-</p>
             <p>Все достопримечательности находятся очень близко!</p>
           </li>
-          <li class="reasons-item-gray">
+          <li class="reasons-item reasons-item-gray">
             <h3>Красивая дорога</h3>
             <p>-№4-</p>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-         <li class="reasons-item-gray">
+         <li class="reasons-item reasons-item-gray">
             <h3>Мало туристов</h3>
             <p>-№5-</p>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </li>               
+          </li>    
         </ul>
       </section> 
         
-    <section class="recommendation">
+        <section class="recommendation">
         <h2 class="visually-hidden">Рекомендации</h2>
           <ul class="recommendation-list">  
           <li class="recommendation-item">
@@ -79,31 +81,30 @@
     <section class="booking">
         <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <!-- Здесь будет форма -->
         
         <h3>Поиск гостиницы в Седоне</h3>
         <form class="appointment-form" method="get" action="https://echo.htmlacademy.ru">
           <p class="appointment-item">
             <label for="appointment-arrival-date">Дата заезда:
             <input id="appointment-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
-              <span>Иконка календрь</span></label>
+              <button class="button calendar" type="button">Иконка календрь</button></label>
           </p>
             <p class="appointment-item">
             <label for="appointment-departure-date">Дата выезда:
             <input id="appointment-departure-date" type="text" name="departure-date" value="" placeholder="4 июля 2017">
-                <span>Иконка календрь</span></label>
+            <button class="button calendar" type="button">Иконка календрь</button></label>
           </p>
         <p class="appointment-item">
             <label for="appointment-adult">Взрослые:</label>
-            <button class="button appointment-item minus" type="button">-</button>
+            <button class="button minus" type="button">-</button>
             <input id="appointment-adult" type="number" name="adult" value="" min="0" placeholder="2">
-            <button class="button appointment-item add" type="button">+</button>
+            <button class="button add" type="button">+</button>
           </p>
         <p class="appointment-item">
             <label for="appointment-child">Дети:</label>
-            <button class="button appointment-item minus" type="button">-</button>
+            <button class="button minus" type="button">-</button>
             <input id="appointment-child" type="number" name="child" value="" min="0" placeholder="0">
-            <button class="button appointment-item add" type="button">+</button>
+            <button class="button add" type="button">+</button>
           </p>
             <button type="submit" class="button-search">Найти</button>
         </form> 
@@ -137,9 +138,9 @@
         </ul>
       </div> 
     <div class="footer-copyright">
-        <a class="footer-copyright-logo" href="https://htmlacademy.ru">
-            <b>Website by</b>
-        <img src="img/index-logo.svg" width="67" height="67" alt="HTML Academy">
+         <a class="footer-copyright-logo" href="https://htmlacademy.ru">
+         <b>Website by</b>
+        <img src="img/logo-htmlacademy.svg" width="80" height="220" alt="HTML Academy">
         </a>
     </div>
     </footer>
