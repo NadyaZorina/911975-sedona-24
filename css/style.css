@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Myriad Pro, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
@@ -11,11 +11,21 @@ body {
 
 
 background-color: #ffffff;
-  /*background-image: url("img/bp.jpg");*/
+  background-image: url("../img/bp.jpg");
+  
   background-position: top center;
-  background-repeat:#f2f2f2-repeat;
+  background-repeat: no-repeat;
 }
 
+.inner-page {
+  color: #000000;
+    
+  background-color: #fefefe;
+  background-image: url("../img/pattern-light.jpg");
+  
+  background-position: 0 0;
+  background-repeat: repeat;
+}
 
 a {
   text-decoration: none;
@@ -41,6 +51,9 @@ a {
 .site-navigation a:focus
 {
   color: #b2b2b2;
+}
+.site-navigation-current {
+  color: #766357;    
 }
 
 .about { 
@@ -91,21 +104,23 @@ a {
  text-align: center;
  
 }
-.booking h3{
+.searchform{
  font-size: 21px;
  line-height: 26px;
  font-weight: bold;
  text-align: center;
  color: #ffffff;
  background-color: #766357;
+ text-align: center;
+ border: 0;
 }
 
-.booking h3:hover{
+.searchform:hover{
   background-color: #604e43;
   color: #ffffff;
 }
 
-.booking h3:focus{
+.searchform:focus{
   background-color: #503e33;
   color: #857871;
 }
@@ -168,6 +183,121 @@ a {
   color: #88b6d1;
   background-color: #5496bd;
 }
+
+
+.sorting fieldset {
+  border: none;
+}
+.sortby {
+  list-style: none;
+} 
+.sorting {
+ font-size: 12px;
+ line-height: 18px;
+}
+.sorting p{
+ font-size: 21px;
+ line-height: 26px;
+ font-weight: bold;
+}
+.sortby a {
+  color: #9b8d84;
+  border-bottom: dotted;
+  border-bottom-color: #81b3d2
+}
+
+.sortby a:hover{
+  color: #81b3d2; 
+}
+.sortby a:focus{
+  color: #000000; 
+  border-bottom: none;
+}
+.sortby-current a{
+  color: #81b3d2;
+  border-bottom: none;
+}
+ .sorting-metod {
+  list-style: none;
+} 
+.sorting-metod a {
+  color: #cacaca;
+}
+.sorting-metod-current a,
+.sorting-metod a:focus{
+  color: #81b3d2;
+}
+.sorting-metod a:hover{
+  color: #231f20;
+}
+
+.hotels-list {
+  list-style: none;
+} /*как нарисовать рамку?*/
+
+.hotels-item h4 {
+ font-size: 21px;
+ line-height: 26px;
+ font-weight: bold;
+ color: #000000;     
+}
+.hotels-item h4:hover{
+ color: #81b3d2;     
+}
+.hotels-item h4:focus{
+ color: #e5e5e5;     
+} /* Не работает!!!!*/
+
+.hotels-item p{
+ font-size: 14px;
+ line-height: 21px; 
+ color: #333333;   
+} 
+.hotels-item b{
+ font-size: 14px;
+ line-height: 21px; 
+ background-color: #f2f2f2;
+ color: #666666;   
+} 
+
+.button-detail,
+.button-reserve{
+  text-transform: none;
+}
+.button-detail,
+.button-reserve{
+ text-align: center;
+ vertical-align: middle;
+    
+ font-size: 14px;
+ line-height: 21px;
+ text-transform: uppercase;
+    
+  color: #ffffff;
+  border: none;
+}
+.button-detail {
+  background-color: #81b3d2;
+}
+.button-reserve{
+  background-color: #766357;
+}
+
+.button-detail:hover {
+  background-color: #669ec0;
+}
+.button-reserve:hover{
+  background-color: #604e43;
+}
+.button-detail:focus {
+  background-color: #5496bd;
+  color: #75a7c7;
+}
+.button-reserve:focus{
+  background-color: #503e33;
+  color: #857871;
+}
+
 
 .footer-hashtag a{
   font-size: 21px;
