@@ -415,6 +415,7 @@ a {
   background-color: #f2f2f2;
   border: 0;
   padding: 0;
+  outline: 0;
 }
 .appointment-item.adult input,
 .appointment-item.child input{
@@ -492,6 +493,7 @@ a {
     border: 0;
     outline: 0; 
     
+    background-color: #f2f2f2;
    /* background: rgba(0, 128, 0, 0.2);временно*/  
 }
 .add{
@@ -505,6 +507,8 @@ a {
     
     bottom: 1px;
     right: 9px;
+    
+    color: #a9a9a9;
 }
 .add::after{
     content:"+";
@@ -513,24 +517,24 @@ a {
     
     bottom: 0px;
     right: 9px;
+    
+    color: #a9a9a9;
 }
-/*.add,
-.minus {
-  color: #a9a9a9;
-}*/
 
-.appointment-item input,
-.add,
-.minus:hover{
+.appointment-item input:hover/*,
+.add:hover,
+.minus:hover*/{
   background-color: #ebebeb;
+  outline: 0;
 }
-.appointment-item input,
-.add,
-.minus:active{
+.appointment-item input:active/*,
+.add:active,
+.minus:active*/{
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
+  outline: 0;
 }
-/*
+
 .add:hover::after,
 .minus:hover::after {
    color: #000000;   
@@ -541,7 +545,7 @@ a {
 .minus:active::after {
   color: #81b3d2;   
 }
-  */
+  
 
 
 
