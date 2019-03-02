@@ -5,7 +5,7 @@
     <title>Седона</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
       <link href="css/normalize.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="inner-page">
   <header class="main-header">
@@ -51,11 +51,9 @@
             <li><a class="button" href="#">По рейтингу</a></li>
            </ul>
             </fieldset>
-           <div>
-            
+           <div class="sort-wrapper">
                 <a class="button button-arrow-down" href="#"><span class="visually-hidden">Сортировка по убыванию</span></a>
-               <a class="button button-arrow-up" href="#"><span class="visually-hidden">Сортировка по возростанию</span></a>
-
+               <a class="button button-arrow-up sort-current" href="#"><span class="visually-hidden">Сортировка по возростанию</span></a>
                 </div>
             </div>
       </section>
@@ -89,49 +87,55 @@
               </div>
              </li> 
              <li class="hotels-item">
-              <p class="hotels-item-image">
               <img src="img/desert_quail.jpg" width="135" height="90" alt="Мотель Desert Quail INN">
-              </p>   
-              <a href="hotels-item.html">
+           <div class="about-hotel">
+             <a href="hotels-item.html">
                  <h4 class="hotels-name">Desert Quail INN</h4>
-            </a> 
-            <p>Мотель</p>
-            <p>От 3000 р.</p>
-            <a class="button button-detail" href="details_Desert.html">Подробнее</a>
+            </a>
+            <div class="hotels-description">
+            <p class="hotels-type">Мотель</p>
+            <p class="hotels-price">От 3000 р.</p>
+            </div>
+              <div class="hotels-button">
+              <a class="button button-detail" href="details_Desert.html">Подробнее</a>
             <a class="button button-reserve" href="#">Забронировать</a>
-            <p><b class="visually-hidden">Категория отеля</b>
-                 <span class="star"></span>
-                 <span class="star"></span>
-                 <span class="star"></span></p>
-               <p class="hotels-rating">     
-               <b>Рейтинг: 8,9</b>
-             </p>
-             </li>
-             <li class="hotels-item">
-                <p class="hotels-item-image">
-              <img src="img/poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
-              </p> 
-                <a href="hotels-item.html">
-                 <h4 class="hotels-name">Villas at Poco Diablo</h4>
-            </a>  
-            <p>Апартаменты</p>
-            <p>От 2000 р.</p> 
-            <a class="button button-detail" href="details_Villas.html">Подробнее</a>
-            <a class="button button-reserve" href="#">Забронировать</a>
-            <p><b class="visually-hidden">Категория отеля</b>
-                 <span class="star"></span>
-                 <span class="star"></span></p>
-             <p class="hotels-rating">
-               <b>Рейтинг: 9,2</b>
-              </p>   
-              </li> 
-        </ul>
                </div>
+            </div>
+            <div class="hotels-category">
+                <p><b class="visually-hidden">Категория отеля</b><span class="star"></span>
+                <span class="star"></span>
+                <span class="star"></span></p>
+              <p class="hotels-rating">Рейтинг: 8,9</p>
+              </div>
+             </li>        
+              <li class="hotels-item">
+              <img src="img/poco_diablo.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
+           <div class="about-hotel">
+             <a href="hotels-item.html">
+                 <h4 class="hotels-name">Villas at Poco Diablo</h4>
+            </a>
+            <div class="hotels-description">
+            <p class="hotels-type">Апартаменты</p>
+            <p class="hotels-price">От 2000 р.</p>
+            </div>
+              <div class="hotels-button">
+              <a class="button button-detail" href="details_Villas.html">Подробнее</a>
+            <a class="button button-reserve" href="#">Забронировать</a>
+               </div>
+            </div>
+            <div class="hotels-category">
+                <p><b class="visually-hidden">Категория отеля</b><span class="star"></span>
+                <span class="star"></span></p>
+              <p class="hotels-rating">Рейтинг: 9,2</p>
+              </div>
+             </li>   
+        </ul>
+          </div>
       </section>
         </section>
         </main>
        
-        <footer class="main-footer-inner">
+        <footer class="main-footer">
        <div class="main-footer-wrapper">
         <p class="footer-hashtag"> 
           <a href="#">#VISITSEDONA</a>
